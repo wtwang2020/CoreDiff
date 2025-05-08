@@ -1,6 +1,10 @@
 import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import torch
 import torch.distributed as dist
+import argparse
+import sys
+sys.path.append('/data/wangweitao/i_am_yibo/mnt/sdb/i_am_yibo/project/欧核/主模型/OTF_nii')
 
 from models import model_dict, TrainTask
 
